@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Heriberto Imperial Badillo 00000204687
+Pagina donde se ejecutan todas las funciones de la calculadora
+-->
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="formulario" method="post">
+            <label>Numero 1</label>
+            <!-- Se captura el primer dato-->
+            <input type="number" id="valor1">
+            <!-- Indica que se sumara-->
+            <button type="button" onclick="suma()">+</button>
+            <!-- Indica que se restara-->
+            <button type="button" onclick="resta();">-</button>
+            <br>
+            <label>Numero 2</label>
+            <!-- Se captura el segundo dato-->
+            <input type="number" id="valor2">
+            <!-- Indica que se multiplicara-->
+            <button type="button" onclick="multiplicar()">*</button>
+            <!-- Indica que se dividira-->
+            <button type="button" onclick="dividir()">/</button>
+            <br>
+            <label>Resultado</label>
+            <!-- Se muesta el resultado de la operacion-->
+            <input  id="resultado" readonly="">
+            <!-- Ejecuta la operacion correspondiente-->
+            <button type="button" onclick="resul()">=</button>
+            
+        </form>
+        <script type="text/javascript" src="calculadora.js">
+        </script>
+    </body>
+</html>
